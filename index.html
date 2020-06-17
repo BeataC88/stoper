@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stoper</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        button {
+            margin: 20px;
+            width: 100px;
+            height: 40px;
+            background-color: #1587EA;
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 10%;
+            letter-spacing: 2px;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        .time {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            text-align: center;
+            font-family: monospace;
+            font-size: 60px;
+            margin-left: 20px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <button class='start'>START</button>
+    <button class='reset'>RESET</button>
+
+    <div class='time'>
+        <p>Pomiar czasu od startu: </p>
+        <div>0.00</div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
